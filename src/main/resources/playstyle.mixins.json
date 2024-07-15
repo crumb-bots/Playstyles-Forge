@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.wsquarepa.playstylesforge.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "Playstyles-Forge.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
