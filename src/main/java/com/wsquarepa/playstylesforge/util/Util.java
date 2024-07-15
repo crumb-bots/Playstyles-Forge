@@ -1,9 +1,16 @@
 package com.wsquarepa.playstylesforge.util;
 
+import net.minecraft.core.NonNullList;
 import net.minecraft.world.entity.EntityType;
 
 public class Util {
     private Util() {
+    }
+
+    public static <T> NonNullList<T> cloneNonNullList(NonNullList<T> list) {
+        NonNullList<T> clone = NonNullList.create();
+        clone.addAll(list);
+        return clone;
     }
 
     public static String timeToString(long time) {
