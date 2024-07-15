@@ -30,7 +30,8 @@ public class MainCommand {
                         .then(Commands.argument("mode", StringArgumentType.string())
                                 .executes(MainCommand::onSet)))
                 .then(Commands.literal("confirm")
-                        .executes(MainCommand::onConfirm))
+                        .then(Commands.argument("mode", StringArgumentType.string())
+                                .executes(MainCommand::onConfirm)))
                 .executes(MainCommand::onDefault);
 
         dispatcher.register(builder);
